@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OO-IS: Main Page</title>
+<title>OO-IS: Data Fields - Functions/Subroutines</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('functions_func.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -89,31 +89,57 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
-  <div class="headertitle">
-<div class="title">OO-IS Documentation</div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Simple Ising Spin model using Object Oriented Fortran </p>
-<h1><a class="anchor" id="Intro"></a>
-Introduction</h1>
-<p>A basic program for magnetic domain simulations using the Ising Model. Based on my model solutions for PX913 and extended into a terribly overbuilt Object Oriented version. This relies on the helper modules <a class="el" href="kinds_8f90.html">kinds.f90</a>, <a class="el" href="command__line_8f90.html">command_line.f90</a>, <a class="el" href="ascii__display_8f90.html">ascii_display.f90</a>, and also <a class="el" href="random__mod_8f90.html">random_mod.f90</a> and <a class="el" href="sleep__mod_8f90.html">sleep_mod.f90</a> </p>
-<h1><a class="anchor" id="Inputs"></a>
-Inputs</h1>
-<pre class="fragment">Input parameters:
-
-All input is given in the form 'key=value'
-
-help=T - print this help
-N=&lt;integer&gt; - the number of spatial grid points
-max_iters=&lt;integer&gt; - the number of iterations to run
-init=&lt;character&gt; - initial setup to use
-beta=&lt;real&gt; - Inverse temperature (see model description)
-J=&lt;integer&gt; - Susceptibility ?? is that right?
-
-</pre> <dl class="section author"><dt>Author</dt><dd>Heather Ratcliffe </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>27/1/2020 </dd></dl>
-</div></div><!-- PageDoc -->
+&#160;<ul>
+<li>allocate_grid()
+: <a class="el" href="structising__functions_1_1ising__grid.html#a3751866f5aca632ac14a3e67914b9456">ising_functions::ising_grid</a>
+</li>
+<li>csleep()
+: <a class="el" href="interfacesleep__mod_1_1csleep.html#a6a77c860484616353463f4e40cf68597">sleep_mod::csleep</a>
+</li>
+<li>destroy_grid()
+: <a class="el" href="structising__functions_1_1ising__grid.html#af7159a40bcf306d607023c714ab1bd35">ising_functions::ising_grid</a>
+</li>
+<li>flip()
+: <a class="el" href="structising__functions_1_1ising__element.html#ac2abecf555241ccf49163ba3517f36ea">ising_functions::ising_element</a>
+</li>
+<li>flips()
+: <a class="el" href="structising__functions_1_1ising__grid.html#af79d164ae52aeff0b9704c53efbe4c11">ising_functions::ising_grid</a>
+</li>
+<li>get_arg_name_dbl()
+: <a class="el" href="interfacecommand__line_1_1get__arg.html#aa1b6b681d1234451081ffcf5bf725354">command_line::get_arg</a>
+</li>
+<li>get_arg_name_int()
+: <a class="el" href="interfacecommand__line_1_1get__arg.html#a0e435b29cc656832e67d9d1a6ddc7bef">command_line::get_arg</a>
+</li>
+<li>get_arg_name_str()
+: <a class="el" href="interfacecommand__line_1_1get__arg.html#a241850827ac17622cd51e2407523e13a">command_line::get_arg</a>
+</li>
+<li>get_arg_num_dbl()
+: <a class="el" href="interfacecommand__line_1_1get__arg.html#af6fe82a88396e04cc6f9a9e10b98ea51">command_line::get_arg</a>
+</li>
+<li>get_arg_num_int()
+: <a class="el" href="interfacecommand__line_1_1get__arg.html#a4b8356c3446e34043aa91a0e45033b77">command_line::get_arg</a>
+</li>
+<li>get_arg_num_str()
+: <a class="el" href="interfacecommand__line_1_1get__arg.html#a1c5b0c538ffdc59f4d8527ab8707d2e8">command_line::get_arg</a>
+</li>
+<li>iterate()
+: <a class="el" href="structising__functions_1_1ising__grid.html#a161a493a1bfc089975b915da405540d1">ising_functions::ising_grid</a>
+</li>
+<li>magnetization()
+: <a class="el" href="structising__functions_1_1ising__grid.html#af2e00508365f231084cfd2b32f6ce8cb">ising_functions::ising_grid</a>
+</li>
+<li>magnetization_el()
+: <a class="el" href="structising__functions_1_1ising__element.html#a026a9884c696c4670c241a8288108c20">ising_functions::ising_element</a>
+</li>
+<li>nanosleep()
+: <a class="el" href="interfacesleep__mod_1_1nanosleep.html#a594b14c6c6b168733a2ef153846aeaa6">sleep_mod::nanosleep</a>
+</li>
+<li>setup_grid()
+: <a class="el" href="structising__functions_1_1ising__grid.html#abd676518ad454a593b5612d36b05f61f">ising_functions::ising_grid</a>
+</li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

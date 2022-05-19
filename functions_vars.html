@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OO-IS: Main Page</title>
+<title>OO-IS: Data Fields - Variables</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('functions_vars.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -89,31 +89,46 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
-  <div class="headertitle">
-<div class="title">OO-IS Documentation</div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Simple Ising Spin model using Object Oriented Fortran </p>
-<h1><a class="anchor" id="Intro"></a>
-Introduction</h1>
-<p>A basic program for magnetic domain simulations using the Ising Model. Based on my model solutions for PX913 and extended into a terribly overbuilt Object Oriented version. This relies on the helper modules <a class="el" href="kinds_8f90.html">kinds.f90</a>, <a class="el" href="command__line_8f90.html">command_line.f90</a>, <a class="el" href="ascii__display_8f90.html">ascii_display.f90</a>, and also <a class="el" href="random__mod_8f90.html">random_mod.f90</a> and <a class="el" href="sleep__mod_8f90.html">sleep_mod.f90</a> </p>
-<h1><a class="anchor" id="Inputs"></a>
-Inputs</h1>
-<pre class="fragment">Input parameters:
-
-All input is given in the form 'key=value'
-
-help=T - print this help
-N=&lt;integer&gt; - the number of spatial grid points
-max_iters=&lt;integer&gt; - the number of iterations to run
-init=&lt;character&gt; - initial setup to use
-beta=&lt;real&gt; - Inverse temperature (see model description)
-J=&lt;integer&gt; - Susceptibility ?? is that right?
-
-</pre> <dl class="section author"><dt>Author</dt><dd>Heather Ratcliffe </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>27/1/2020 </dd></dl>
-</div></div><!-- PageDoc -->
+&#160;<ul>
+<li>beta
+: <a class="el" href="structising__functions_1_1ising__grid.html#ab42aa24743e135277c20989148c5e7f0">ising_functions::ising_grid</a>
+</li>
+<li>el_flips
+: <a class="el" href="structising__functions_1_1ising__element.html#aba1cc12ff867c6a0744e3db25d903827">ising_functions::ising_element</a>
+</li>
+<li>elements
+: <a class="el" href="structising__functions_1_1ising__grid.html#a4b17d194ac3a0e04ee37db54bc8bff40">ising_functions::ising_grid</a>
+</li>
+<li>j
+: <a class="el" href="structising__functions_1_1ising__grid.html#a5718d8d7dd783acf03442c989f1f5958">ising_functions::ising_grid</a>
+</li>
+<li>name
+: <a class="el" href="structcommand__line_1_1cmd__arg.html#a61c18ddb60dad5d792bb374a59048682">command_line::cmd_arg</a>
+</li>
+<li>neighbours
+: <a class="el" href="structising__functions_1_1ising__element.html#aa6cadf7347810f2489659299f26af932">ising_functions::ising_element</a>
+</li>
+<li>ptr
+: <a class="el" href="structising__functions_1_1ptr__wrapper.html#a25ab5d3577e61729c0b0099e05dcce78">ising_functions::ptr_wrapper</a>
+</li>
+<li>state
+: <a class="el" href="structising__functions_1_1ising__element.html#ac480037b0060dc737aae97aabba13e18">ising_functions::ising_element</a>
+, <a class="el" href="structising__functions_1_1ising__grid.html#a4de2e23ab18c0fdf41fd9e1ccbe21807">ising_functions::ising_grid</a>
+</li>
+<li>sz
+: <a class="el" href="structising__functions_1_1ising__grid.html#ab8f00ad6bc7f7c2f79094b5159ec001e">ising_functions::ising_grid</a>
+</li>
+<li>tv_nsec
+: <a class="el" href="structsleep__mod_1_1timespec.html#a967615c641ca62ad768976202f9bcd9c">sleep_mod::timespec</a>
+</li>
+<li>tv_sec
+: <a class="el" href="structsleep__mod_1_1timespec.html#a33a977a0416d675dc57a6aff1a71baca">sleep_mod::timespec</a>
+</li>
+<li>value
+: <a class="el" href="structcommand__line_1_1cmd__arg.html#a4e193ac8b422312f77938ee18c15c86d">command_line::cmd_arg</a>
+</li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

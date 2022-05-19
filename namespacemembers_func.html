@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OO-IS: Main Page</title>
+<title>OO-IS: Module Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('namespacemembers_func.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -89,31 +89,90 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
-  <div class="headertitle">
-<div class="title">OO-IS Documentation</div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Simple Ising Spin model using Object Oriented Fortran </p>
-<h1><a class="anchor" id="Intro"></a>
-Introduction</h1>
-<p>A basic program for magnetic domain simulations using the Ising Model. Based on my model solutions for PX913 and extended into a terribly overbuilt Object Oriented version. This relies on the helper modules <a class="el" href="kinds_8f90.html">kinds.f90</a>, <a class="el" href="command__line_8f90.html">command_line.f90</a>, <a class="el" href="ascii__display_8f90.html">ascii_display.f90</a>, and also <a class="el" href="random__mod_8f90.html">random_mod.f90</a> and <a class="el" href="sleep__mod_8f90.html">sleep_mod.f90</a> </p>
-<h1><a class="anchor" id="Inputs"></a>
-Inputs</h1>
-<pre class="fragment">Input parameters:
-
-All input is given in the form 'key=value'
-
-help=T - print this help
-N=&lt;integer&gt; - the number of spatial grid points
-max_iters=&lt;integer&gt; - the number of iterations to run
-init=&lt;character&gt; - initial setup to use
-beta=&lt;real&gt; - Inverse temperature (see model description)
-J=&lt;integer&gt; - Susceptibility ?? is that right?
-
-</pre> <dl class="section author"><dt>Author</dt><dd>Heather Ratcliffe </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>27/1/2020 </dd></dl>
-</div></div><!-- PageDoc -->
+&#160;<ul>
+<li>allocate_grid()
+: <a class="el" href="namespaceising__functions.html#afcc4f99897532d9049d72783012a0955">ising_functions</a>
+</li>
+<li>busy_sleep_example()
+: <a class="el" href="namespacesleep__mod.html#a0d19f2f8cd27008b932c920d683e1cf1">sleep_mod</a>
+</li>
+<li>destroy_grid()
+: <a class="el" href="namespaceising__functions.html#a5c2fe06cb3532be3d51306a9f4d968bb">ising_functions</a>
+</li>
+<li>display_3val_array()
+: <a class="el" href="namespaceascii__display.html#ade2fec4d15817fa79267ef476f1e0ea3">ascii_display</a>
+</li>
+<li>display_array()
+: <a class="el" href="namespaceascii__display.html#aa4eed7a0ef6102c5e65c4df3d3c5a077">ascii_display</a>
+</li>
+<li>fill_command_args()
+: <a class="el" href="namespaceuser__interaction.html#a73fd452c26200453056fe6488df202ea">user_interaction</a>
+</li>
+<li>flip()
+: <a class="el" href="namespaceising__functions.html#aa3ab74d427d8b66b3ecda310962e3a09">ising_functions</a>
+</li>
+<li>flips()
+: <a class="el" href="namespaceising__functions.html#a80a7a988fd78faa4147e69cf20c2bea5">ising_functions</a>
+</li>
+<li>get_arg_name_dbl()
+: <a class="el" href="namespacecommand__line.html#a056beb72689ad177d8cff3485a2af17e">command_line</a>
+</li>
+<li>get_arg_name_int()
+: <a class="el" href="namespacecommand__line.html#a87beca9f40f3fed11a6f39dbaa3bdee9">command_line</a>
+</li>
+<li>get_arg_name_str()
+: <a class="el" href="namespacecommand__line.html#ad432ee764eb632c9f2ad085eeefe96d2">command_line</a>
+</li>
+<li>get_arg_num_dbl()
+: <a class="el" href="namespacecommand__line.html#a4ae5dc13ab70fe547ec96716c78661ce">command_line</a>
+</li>
+<li>get_arg_num_int()
+: <a class="el" href="namespacecommand__line.html#a872d4b2476ae5e01b305dddf46384626">command_line</a>
+</li>
+<li>get_arg_num_str()
+: <a class="el" href="namespacecommand__line.html#a4576dfe53309da770c1715eb9677202b">command_line</a>
+</li>
+<li>get_arg_value()
+: <a class="el" href="namespacecommand__line.html#a30e7be0c5723a764917655765011f807">command_line</a>
+</li>
+<li>iterate()
+: <a class="el" href="namespaceising__functions.html#a5db1bd62db3fcb8726c191e3e3f3b281">ising_functions</a>
+</li>
+<li>magnetization()
+: <a class="el" href="namespaceising__functions.html#aba3f7624f3999bd8246611605b2af63e">ising_functions</a>
+</li>
+<li>magnetization_el()
+: <a class="el" href="namespaceising__functions.html#a811748a403285cb989ebe9f881794b1f">ising_functions</a>
+</li>
+<li>millisleep()
+: <a class="el" href="namespacesleep__mod.html#a7438e0c1bc04a8aa582ac16df315c690">sleep_mod</a>
+</li>
+<li>parse_args()
+: <a class="el" href="namespacecommand__line.html#a734d8c49c0752d11e52d373ed52f0984">command_line</a>
+</li>
+<li>print_help()
+: <a class="el" href="namespaceuser__interaction.html#a148978b85f77c342f789408feeaf4520">user_interaction</a>
+</li>
+<li>random()
+: <a class="el" href="namespacerandom__mod.html#adc2af8e28389fcb79332ea9439f1c369">random_mod</a>
+</li>
+<li>setup_alternating_spin_grid()
+: <a class="el" href="group__core.html#ga644ccd2b2c6e06498188a461b5b82493">ising_functions</a>
+</li>
+<li>setup_grid()
+: <a class="el" href="namespaceising__functions.html#ad0c7be309d1d974fc6d1aa4aa17109f9">ising_functions</a>
+</li>
+<li>setup_random_spin_grid()
+: <a class="el" href="group__core.html#gadd599079520cd26f4c1f7da2354b2871">ising_functions</a>
+</li>
+<li>sleep_sec()
+: <a class="el" href="namespacesleep__mod.html#a7a9c5ef010f61cf6191605756de7523c">sleep_mod</a>
+</li>
+<li>wait_for_enter_key()
+: <a class="el" href="namespaceascii__display.html#a1df1c6155fc5682c987306d010f9f2d5">ascii_display</a>
+</li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
