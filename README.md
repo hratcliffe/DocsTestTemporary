@@ -1,4 +1,5 @@
 
+
 # The Code
 This code is an OO version of the simple Ising Spin model for magnetic domains.
 It's spread across files and uses some OO features.
